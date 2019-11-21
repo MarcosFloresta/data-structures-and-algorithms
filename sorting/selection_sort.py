@@ -1,5 +1,5 @@
 # Selection sort in Python
-def selectionSort(array, size):
+def selection_sort(array, size):
     for step in range(size):
         min_idx = step
         for i in range(step + 1, size):
@@ -11,6 +11,6 @@ def selectionSort(array, size):
 
 data = [-2, 45, 0, 11, -9]
 size = len(data)
-selectionSort(data, size)
+selection_sort(data, size)
 print('Sorted Array in Ascending Order:\n')
 print(data)
