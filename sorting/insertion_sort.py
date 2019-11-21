@@ -1,5 +1,5 @@
 # Insertion sort in Python
-def insertionSort(array):
+def insertion_sort(array):
     for step in range(1, len(array)):
         key = array[step]
         j = step - 1
@@ -9,6 +9,6 @@ def insertionSort(array):
             j = j - 1
         array[j + 1] = key
 data = [9, 5, 1, 4, 3]
-insertionSort(data)
+insertion_sort(data)
 print('Sorted Array in Ascending Order:')
 print(data)
