@@ -1,5 +1,5 @@
 # Bucket Sort in Python programming
-def bucketSort(array):
+def bucket_sort(array):
     bucket = []
     for i in range(len(array)):
         bucket.append([])
@@ -21,4 +21,4 @@ def bucketSort(array):
 
 array = [.42, .32, .33, .52, .37, .47, .51]
 print("Sorted Array in descending order is")
-print(bucketSort(array))
+print(bucket_sort(array))
