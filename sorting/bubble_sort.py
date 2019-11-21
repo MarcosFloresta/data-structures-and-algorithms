@@ -1,5 +1,5 @@
 # Bubble sort in Python
-def bubbleSort(array):
+def bubble_sort(array):
     for i in range(len(array)):
         for j in range(0, len(array) - i - 1):
             # To sort in descending order, change > to < in this line.
@@ -8,6 +8,6 @@ def bubbleSort(array):
 
 
 data = [-2, 45, 0, 11, -9]
-bubbleSort(data)
+bubble_sort(data)
 print('Sorted Array in Ascending Order:')
 print(data)
