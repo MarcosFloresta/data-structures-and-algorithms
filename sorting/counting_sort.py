@@ -1,5 +1,5 @@
 # Counting sort in Python programming
-def countingSort(array):
+def counting_sort(array):
     size = len(array)
     output = [0] * size
     count = [0] * 10
@@ -17,6 +17,6 @@ def countingSort(array):
 
 
 data = [4, 2, 2, 8, 3, 3, 1]
-countingSort(data)
+counting_sort(data)
 print("Sorted Array in Ascending Order: ")
 print(data)
