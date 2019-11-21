@@ -1,5 +1,5 @@
 # Python3 program for implementation of Shell Sort
-def shellSort(array, n):
+def shell_sort(array, n):
     gap = n // 2
     while gap > 0:
         for i in range(gap, n):
@@ -14,6 +14,6 @@ def shellSort(array, n):
 
 data = [9, 8, 3, 7, 5, 6, 4, 1]
 size = len(data)
-shellSort(data, size)
+shell_sort(data, size)
 print('Sorted Array in Ascending Order:')
-print(data
+print(data)
