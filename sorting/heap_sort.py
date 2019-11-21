@@ -16,7 +16,7 @@ def heapify(arr, n, i):
         heapify(arr, n, largest)
 
 
-def heapSort(arr):
+def heap_sort(arr):
     n = len(arr)
 
     # Build max heap
@@ -32,7 +32,7 @@ def heapSort(arr):
 
 
 arr = [12, 11, 13, 5, 6, 7]
-heapSort(arr)
+heap_sort(arr)
 n = len(arr)
 print("Sorted array is")
 for i in range(n):
