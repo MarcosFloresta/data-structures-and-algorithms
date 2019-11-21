@@ -1,5 +1,5 @@
 # Radix sort in Python
-def countingSort(array, place):
+def counting_sort(array, place):
     size = len(array)
     output = [0] * size
     count = [0] * 10
@@ -18,14 +18,14 @@ def countingSort(array, place):
         array[i] = output[i]
 
 
-def radixSort(array):
+def radix_sort(array):
     max_element = max(array)
     place = 1
     while max_element // place > 0:
-        countingSort(array, place)
+        counting_sort(array, place)
         place *= 10
 
 
 data = [121, 432, 564, 23, 1, 45, 788]
-radixSort(data)
+radix_sort(data)
 print(data)
