@@ -1,3 +1,20 @@
+/*
+function bellmanFord(G, S)
+	for each vertex V in G
+			distance[V] <- infinite
+			previous[V] <- NULL
+	distance[S] <- 0
+	for each vertex V in G				
+		for each edge (U,V) in G
+			tempDistance <- distance[U] + edge_weight(U, V)
+			if tempDistance < distance[V]
+			   distance[V] <- tempDistance
+			   previous[V] <- U
+	for each edge (U,V) in G
+		If distance[U] + edge_weight(U, V) < distance[V]
+			Error: Negative Cycle Exists
+	return distance[], previous[]
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #define INFINITY 99999
@@ -36,31 +53,31 @@ int main(void)
 		w is the weight of the edge (u,v)
 	*/
 
-    //edge 0 --> 1
-    g->edge[0].u = 0;
-    g->edge[0].v = 1;
-    g->edge[0].w = 5;
+//edge 0 --> 1
+g->edge[0].u = 0;
+g->edge[0].v = 1;
+g->edge[0].w = 5;
 
-    //edge 0 --> 2
-    g->edge[1].u = 0;
-    g->edge[1].v = 2;
-    g->edge[1].w = 4;
-    //edge 1 --> 3
-    g->edge[2].u = 1;
-    g->edge[2].v = 3;
-    g->edge[2].w = 3;
-    //edge 2 --> 1
-    g->edge[3].u = 2;
-    g->edge[3].v = 1;
-    g->edge[3].w = -6;
-    //edge 3 --> 2
-    g->edge[4].u = 3;
-    g->edge[4].v = 2;
-    g->edge[4].w = 2;
+//edge 0 --> 2
+g->edge[1].u = 0;
+g->edge[1].v = 2;
+g->edge[1].w = 4;
+//edge 1 --> 3
+g->edge[2].u = 1;
+g->edge[2].v = 3;
+g->edge[2].w = 3;
+//edge 2 --> 1
+g->edge[3].u = 2;
+g->edge[3].v = 1;
+g->edge[3].w = -6;
+//edge 3 --> 2
+g->edge[4].u = 3;
+g->edge[4].v = 2;
+g->edge[4].w = 2;
 
-    bellmanford(g, 0); //0 is the source vertex
+bellmanford(g, 0); //0 is the source vertex
 
-    return 0;
+return 0;
 }
 void bellmanford(struct Graph *g, int source)
 {
