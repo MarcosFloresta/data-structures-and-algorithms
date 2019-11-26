@@ -1,3 +1,32 @@
+/*
+//Initialize nodes 
+struct node *root;
+struct node *one = NULL;
+struct node *two = NULL;
+struct node *three = NULL;
+
+//Allocate memory
+one = malloc(sizeof(struct node));
+two = malloc(sizeof(struct node));
+three = malloc(sizeof(struct node));
+
+//Assign data values
+one->data = 1;
+two->data = 2;
+three->data = 3;
+
+//Connect nodes 
+one->left = two;
+one->right = three;
+two->left = NULL;
+two->right = NULL;
+three->left = NULL;
+three->right = NULL;
+
+//Save address of first node in root 
+root = one;
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 struct node
