@@ -65,7 +65,7 @@ public:
             cout << endl << "Front -> " << front;
             cout << endl << "Items -> ";
             for(i=front; i<=rear; i++)
-                cout << items[i] << ""\t";
+                cout << items[i] << "\t";
             cout << endl << "Rear -> " << rear << endl;
         }
     }
