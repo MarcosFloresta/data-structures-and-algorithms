@@ -258,7 +258,7 @@ int main() {
 ```
 
 ### C++
-S
+
 ```cpp
 // Stack implementation in C++
 
