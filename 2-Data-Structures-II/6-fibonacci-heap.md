@@ -1462,12 +1462,14 @@ int main() {
 
 ## Complexities
 
-1. Insertion	O(1)
-2. Find Min	O(1)
-3. Union	O(1)
-4. Extract Min	O(log n)
-5. Decrease Key	O(1)
-6. Delete Node	O(log n)
+| | |
+| --- | --- |
+| Insertion	| O(1) |
+| Find Min	| O(1) |
+| Union | O(1) |
+| Extract Min | O(log n) |
+| Decrease Key | O(1) |
+| Delete Node | O(log n) |
 
 ## Fibonacci Heap Applications
 
