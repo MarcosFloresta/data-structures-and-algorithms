@@ -14,8 +14,11 @@ A complete binary tree is a special binary tree in which
 Heap Property is the property of a node in which
 
 * (for max heap) key of each node is always greater than its child node/s and the key of the root node is the largest among all other nodes;
+  
 ![Max-heap](/2-Data-Structures-II/img/maxheap_1.webp)
-(for min heap) key of each node is always smaller than the child node/s and the key of the root node is the smallest among all other nodes.
+
+* (for min heap) key of each node is always smaller than the child node/s and the key of the root node is the smallest among all other nodes.
+
 ![Min-heap](/2-Data-Structures-II/img/minheap_0.webp)
 
 ## Heap Operations
